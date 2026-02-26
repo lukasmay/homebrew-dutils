@@ -1,8 +1,9 @@
 class Dutils < Formula
   desc "CLI tools to speed up working with docker compose projects"
   homepage "https://github.com/lukasmay/d-utils"
-  url "file:///Users/lukasmay/git/d-utils", using: :git, branch: "main"
-  version "2.0.0-dev"
+  url "https://github.com/lukasmay/d-utils/archive/refs/tags/v2.0.0.tar.gz"
+  sha256 "ec63707770cbf700c0a5be0183b89e158f1734a2be278d64e70922c139e55dd0"
+  license "MIT"
 
   def install
     # Install the main executable
