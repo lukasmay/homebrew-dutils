@@ -8,8 +8,6 @@ class Dutils < Formula
   version "1.0.0"
   license "Apache-2.0"
 
-  depends_on "go"
-
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/lukasmay/dutils/releases/download/v1.0.0/dutils_Darwin_x86_64.tar.gz"
