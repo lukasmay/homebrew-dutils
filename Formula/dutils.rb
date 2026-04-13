@@ -5,13 +5,13 @@
 class Dutils < Formula
   desc "Docker and Docker Compose workflow simplifier"
   homepage "https://github.com/lukasmay/dutils"
-  version "1.0.0"
+  version "1.0.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lukasmay/dutils/releases/download/v1.0.0/dutils_Darwin_x86_64.tar.gz"
-      sha256 "5c07b14ad2fe9f6dd68ebe77fe766fd46205731ea36140d0b0c4ed6124d867f3"
+      url "https://github.com/lukasmay/dutils/releases/download/v1.0.1/dutils_Darwin_x86_64.tar.gz"
+      sha256 "5d102e532530a52eebd6018258a94c90616d94204dec4418c475965305abb991"
 
       define_method(:install) do
         bin.install "dutils"
@@ -23,8 +23,8 @@ class Dutils < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lukasmay/dutils/releases/download/v1.0.0/dutils_Darwin_arm64.tar.gz"
-      sha256 "3264b3dccdbed695e978faff7064ecb7ebce28c9bfe7edd22ebef50c7fdd5399"
+      url "https://github.com/lukasmay/dutils/releases/download/v1.0.1/dutils_Darwin_arm64.tar.gz"
+      sha256 "80fba077628dd4120b72f1b8f35802c3f5082bb47933cd21dfa1a627c9052c1f"
 
       define_method(:install) do
         bin.install "dutils"
@@ -39,8 +39,8 @@ class Dutils < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lukasmay/dutils/releases/download/v1.0.0/dutils_Linux_x86_64.tar.gz"
-      sha256 "54984c6fd6fed9c0f6403bf9faa6cb2d12f949b5e622681a77a613c2423e62d0"
+      url "https://github.com/lukasmay/dutils/releases/download/v1.0.1/dutils_Linux_x86_64.tar.gz"
+      sha256 "0ba3b70ad26ad3c5756a3f4a5a2b7ca044f3b16f30b4068ffe758336883c3505"
       define_method(:install) do
         bin.install "dutils"
 
@@ -51,8 +51,8 @@ class Dutils < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lukasmay/dutils/releases/download/v1.0.0/dutils_Linux_arm64.tar.gz"
-      sha256 "c0b9af1e2a466c3c9dcacebc7210821d1d8e7026d675514f4f7552001fe345b3"
+      url "https://github.com/lukasmay/dutils/releases/download/v1.0.1/dutils_Linux_arm64.tar.gz"
+      sha256 "de175c56ce1dae912c34f029f058b4d18c03a5fcaed92c851c8fe703f3e5a455"
       define_method(:install) do
         bin.install "dutils"
 
